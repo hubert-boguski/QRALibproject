@@ -25,7 +25,7 @@ class MonteCarloSimulation:
         """
 
         self.num_of_iter = num_of_iter
-        risk_outcome = Parallel(n_jobs=self.num_cores)(delayed(self._simulation)(risk) for risk in self.risk_list.listing())
+        risk_outcome = Parallel(n_jobs=1)(delayed(self._simulation)(risk) for risk in self.risk_list.listing())
         simulation_result = {
             "summary":{
                 "number_of_iterations": num_of_iter,
