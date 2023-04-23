@@ -1,4 +1,3 @@
-"""Example usage of QRALib"""
 from QRALib.riskportfolio import RiskPortfolio  as Risks
 from QRALib.simulation.smc import MonteCarloSimulation as smc
 from QRALib.simulation.qmc import QuasiMonteCarlo as qmc
@@ -14,7 +13,7 @@ from QRALib.analysis.single_risk_analysis import SingleRiskAnalysis as sra
 number_of_iterations = 1
 #inp_json = "./example.json"
 #inp_csv = "./test_data_600.csv"
-inp_xlsx = "./test_data_18.xlsx"
+inp_xlsx = "../examples/test_data_18.xlsx"
 
 tolerance = ([0, 1], [100, 0])
 
