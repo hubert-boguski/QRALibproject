@@ -11,12 +11,12 @@ from QRALib.analysis.single_risk_analysis import SingleRiskAnalysis as sra
 
 
 
-number_of_iterations = 100000
+number_of_iterations = 1
 #inp_json = "./example.json"
 #inp_csv = "./test_data_600.csv"
 inp_xlsx = "./test_data_18.xlsx"
 
-tolerance = ([0, 600000, 1000000, 1500000, 3000000], [100, 90, 50, 20, 0])
+tolerance = ([0, 1], [100, 0])
 
 # Import data 
 
