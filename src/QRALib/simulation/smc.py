@@ -16,7 +16,7 @@ class MonteCarloSimulation:
         """:param  risk_list = list of the risks to simulate
         """
         self.risk_list = risk_list
-        self.num_cores = multiprocessing.cpu_count()
+        self.num_cores = 1
 
     def simulation(self, num_of_iter=10000):
         """:param  num_of_iter = number of simulation iterations, default 10 000
